@@ -10,3 +10,15 @@
 sayakghoshkgp01/sayakghoshkgp01 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
 --->
+# Use a library like 'deep-translator' (install via: pip install deep-translator)
+from deep_translator import GoogleTranslator
+
+def translate_text(text, target_lang):
+    # This processes the input and gets the translated response 
+    translated = GoogleTranslator(source='auto', target=target_lang).translate(text)
+    return translated
+
+# Example usage
+user_input = input("Enter text to translate: ")
+result = translate_text(user_input, 'spanish')
+print(f"Translated Text: {result}") # Display clearly on screen [cite: 25]
